@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #003043;
+  }
+  /* ----------user info------- */
+  .acount {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+  }
+  .user-info{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .user-info>div{
+    width: 100%;
+  }
+  .user-info>div>ul{
+    list-style: none;
+    border: 1px solid rgb(200, 197, 197);
+    border-radius: 10px;
+    color: rgb(0, 237, 100);
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .user-info>div>ul>li{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+  }
+  .user-info>div>ul>li>p{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  /* ------form-------- */
+  .form{
+    width: 50%;
+    border: 1px solid rgb(173, 173, 173);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+  }
+  form>h1{
+    color: rgb(0, 237, 100);
+    padding: 2px;
+    text-decoration: underline white;
+    margin-bottom: 50px;
+  
+  }
+  form>input{
+    margin: 5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 70%;
+    border-radius: 6px;
+  }
+
+  /*--------------create user and modify user btn----------*/
+  form>button{
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 237, 100);
+    border: none;
+    border-radius: 5px;
+  }
+  form>button:hover{
+    color: rgb(0, 237, 100);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.09);
+    transition: 300ms;
+  }
+
+  /* ------modify and delete btns---- */
+  .deletebtn{
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 10px;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+  }
+  .modifybtn{
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 10px;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 162, 0);
+  }
+  .deletebtn:hover{
+    color: rgb(252, 8, 8);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.09);
+    transition: 300ms;
+  }
+  .modifybtn:hover{
+    color: rgb(252, 154, 8);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.09);
+    transition: 300ms;
+  }
+ 
+  /* ----responseve----- */
+  @media (max-width:760px) {
+    .acount{
+      display: block;
+    }
+    .form{
+      display: flex;
+      width: 95%;
+      justify-content: center;
+    }
+    .user-info{
+      width: 95%;
+      display: flex;
+      justify-content: center;
+    }
+  }
